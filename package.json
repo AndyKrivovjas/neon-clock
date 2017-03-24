@@ -1,0 +1,24 @@
+{
+  "name": "p5-typescript-quick-start",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "preinstall": "npm i typings -g",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "author": "Andy Krivovjas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:AndyKrivovjas/p5-typescript-quick-start.git"
+  },
+  "dependencies": {
+    "p5": "^0.5.5"
+  }
+}
